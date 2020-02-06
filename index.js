@@ -21,6 +21,9 @@ var server = net.createServer((client) => {
     gt06.msgBuffer.forEach(msg => {
       console.log("==========response=========");
       console.log(msg);
+      if(msg.event.number == 18){
+        console.log(`lat: ${msg.lat} // lon ${msg.lon}`);
+      }
       console.log("==========response=========");
     });
 

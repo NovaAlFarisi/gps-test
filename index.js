@@ -23,7 +23,7 @@ var server = net.createServer((client) => {
       console.log(msg);
       if(msg.event.number == 18){
         console.log(`lat: ${msg.lat} // lon ${msg.lon}`);
-        console.log(`google maps: https://www.google.com/maps?q=${msg.lat},${msg.long}`)
+        console.log(`google maps: https://www.google.com/maps?q=${msg.lat},${msg.lon}`)
       }
       console.log("==========response=========");
     });
